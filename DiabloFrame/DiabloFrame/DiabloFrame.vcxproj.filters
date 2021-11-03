@@ -37,9 +37,6 @@
       <Filter>Source Files\GraphicsManagement</Filter>
     </ClCompile>
     <ClCompile Include="SpriteUtility.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SpriteUtility.cpp">
       <Filter>Source Files\GraphicsManagement</Filter>
     </ClCompile>
   </ItemGroup>
