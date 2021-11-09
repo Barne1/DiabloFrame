@@ -1,3 +1,9 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1097,5): warning MSB8027: Two or more files with the name of SpriteUtility.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are SpriteUtility.cpp, SpriteUtility.cpp.
-  main.cpp
+  Player.cpp
+C:\Users\Hugo\Documents\GitHub\DiabloFrame\DiabloFrame\DiabloFrame\HugoMath.h(15,39): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\Hugo\Documents\GitHub\DiabloFrame\DiabloFrame\DiabloFrame\Player.h(26,35): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\Hugo\Documents\GitHub\DiabloFrame\DiabloFrame\DiabloFrame\Player.cpp(15,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hugo\Documents\GitHub\DiabloFrame\DiabloFrame\DiabloFrame\Player.cpp(16,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hugo\Documents\GitHub\DiabloFrame\DiabloFrame\DiabloFrame\Player.cpp(17,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Hugo\Documents\GitHub\DiabloFrame\DiabloFrame\DiabloFrame\Player.cpp(18,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   DiabloFrame.vcxproj -> C:\Users\Hugo\Documents\GitHub\DiabloFrame\DiabloFrame\Debug\DiabloFrame.exe

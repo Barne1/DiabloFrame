@@ -1,16 +1,17 @@
 #pragma once
 #include "SpriteUtility.h"
 
-class IWalkingSprite
+class WalkingSprite
 {
 public:
-	Directions GetDirection() { return direction; }
-	int GetWalkCycleFrame() { return walkCycleFrame; }
+	const Directions GetDirection() const { return direction; }
+	const int GetWalkCycleFrame() const { return walkCycleFrame; }
 
 protected:
-	void IncrementWalkCycle(bool walkingBackwards = false);
-	void Turn(bool clockwise);
-	void SetDirection(Directions direction);
+	void IncrementWalkCycle(const bool walkingBackwards = false);
+	void Turn(const bool clockwise);
+	void SetDirection(const Directions direction);
+	void SetWalkCycleFrame(const int walkCycleFrame);
 
 private:
 	Directions direction;

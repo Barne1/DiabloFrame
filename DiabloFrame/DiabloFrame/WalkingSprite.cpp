@@ -1,6 +1,6 @@
 #include "WalkingSprite.h"
 
-void IWalkingSprite::IncrementWalkCycle(bool walkingBackwards)
+void WalkingSprite::IncrementWalkCycle(bool walkingBackwards)
 {
 	if (!walkingBackwards)
 	{
@@ -20,7 +20,7 @@ void IWalkingSprite::IncrementWalkCycle(bool walkingBackwards)
 	}
 }
 
-void IWalkingSprite::Turn(bool clockwise)
+void WalkingSprite::Turn(bool clockwise)
 {
 	if (clockwise)
 	{
@@ -54,7 +54,12 @@ void IWalkingSprite::Turn(bool clockwise)
 	}
 }
 
-void IWalkingSprite::SetDirection(Directions direction)
+void WalkingSprite::SetDirection(Directions direction)
 {
 	this->direction = direction;
+}
+
+void WalkingSprite::SetWalkCycleFrame(int walkCycleFrame)
+{
+	this->walkCycleFrame = walkCycleFrame;
 }

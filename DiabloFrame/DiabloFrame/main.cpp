@@ -32,11 +32,15 @@ int main(int argc, char* argv[])
 	SDL_Event event;
 	bool quit = false;
 
-	Player p(textureManager.GetTexture(TEXTURE_PLAYER));
+	Player p(textureManager.GetTexture(TEXTURE_PLAYER), Vector2(coreData.width * 0.5f, coreData.height * 0.5f));
 
-
+	int previousTicks = 0;
 	while (!quit)
 	{
+		int currentTicks = SDL_GetTicks();
+		float deltaTime = (currentTicks- previousTicks) * 0.001; //divide to get in seconds
+		previousTicks = currentTicks;
+
 		//Event polling
 		while (SDL_PollEvent(&event))
 		{
@@ -45,8 +49,11 @@ int main(int argc, char* argv[])
 			default: break;
 			case SDL_QUIT: quit = true; break;
 			case SDL_KEYDOWN: p.KeyChanged(event.key.keysym.sym, true); break;
+			case SDL_KEYUP: p.KeyChanged(event.key.keysym.sym, false); break;
 			}
 		}
+
+		p.Update(deltaTime);
 
 		SDL_RenderClear(coreData.renderer);
 		p.Render(coreData.renderer);

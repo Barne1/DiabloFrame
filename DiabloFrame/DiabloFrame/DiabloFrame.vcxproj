@@ -143,6 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ErrorPrinter.cpp" />
+    <ClCompile Include="HugoMath.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SpriteUtility.cpp" />
@@ -151,11 +152,18 @@
     <ClCompile Include="WalkingSprite.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HugoMath.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Updateable.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SpriteUtility.h" />
     <ClInclude Include="ErrorPrinter.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="WalkingSprite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DiabloFrame.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
